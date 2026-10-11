@@ -1,0 +1,98 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "base_keymap": "VSCode",
+  "autosave": "off",
+  "icon_theme": "Material Icon Theme",
+  "theme": {
+    "mode": "system",
+    "light": "Catppuccin Latte",
+    "dark": "Catppuccin Mocha",
+  },
+  "ui_font_family": "Liga SFMono Nerd Font",
+  "ui_font_size": 15,
+  "buffer_font_family": "Liga SFMono Nerd Font",
+  "buffer_font_size": 15,
+  "terminal": {
+    "dock": "bottom",
+    "font_family": "Liga SFMono Nerd Font",
+    "font_size": 15,
+  },
+  "markdown_preview": {
+    "code_font_family": "Liga SFMono Nerd Font",
+    "font_family": "Liga SFMono Nerd Font",
+  },
+  // 滚动条
+  "scrollbar": {
+    "show": "system",
+  },
+  // 彩虹缩进
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
+  },
+  // 相对行号
+  "relative_line_numbers": "enabled",
+  "cursor_blink": false,
+  "cursor_animation": {
+    "enabled": true,
+  },
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
+  // vim 模式
+  "vim_mode": true,
+  "vim": {
+    "use_smartcase_find": true,
+    "use_system_clipboard": "on_yank",
+  },
+  // which_key
+  "which_key": {
+    "enabled": true,
+    "delay_ms": 200,
+  },
+  // 项目面板
+  "project_panel": {
+    "dock": "left",
+  },
+  // 协作面板
+  "collaboration_panel": {
+    "button": false,
+  },
+  // git
+  "git_panel": {
+    "dock": "left",
+  },
+  // agent
+  "agent": {
+    "default_model": {
+      "provider": "deepseek",
+      "model": "deepseek-v4-pro",
+      "enable_thinking": false,
+      "effort": "low"
+    },
+    "default_profile": "ask",
+    "dock": "right",
+    "favorite_models": [],
+    "model_parameters": []
+  },
+  // 网络代理
+  "proxy": "socks5://127.0.0.1:1080",
+  // 信任所有工作区
+  "session": {
+    "trust_all_worktrees": true,
+  },
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false,
+    "anthropic_retention": false,
+  },
+}

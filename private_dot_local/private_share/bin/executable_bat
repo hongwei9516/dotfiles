@@ -1,0 +1,11 @@
+#!/bin/sh
+# bat 包装器：每次调用时实时检测 macOS 明暗主题，选择对应配色
+# 注：必须用绝对路径调用真实 bat，避免递归
+if [ "$(defaults read -g AppleInterfaceStyle 2>/dev/null)" = "Dark" ]; then
+  # theme="Catppuccin Mocha"   # 深色主题
+  theme="gruvbox-dark" # 深色主题
+else
+  # theme="Catppuccin Latte"   # 浅色主题
+  theme="gruvbox-light" # 浅色主题
+fi
+exec /opt/homebrew/bin/bat --theme="$theme" "$@"

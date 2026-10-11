@@ -1,0 +1,159 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  // Vimcontrol
+  {
+    "context": "VimControl && !menu || !Editor && !Terminal",
+    "bindings": {
+      "H": "vim::GoToPreviousTab",
+      "L": "vim::GoToTab",
+      "alt-ctrl-k": "vim::ResizePaneUp",
+      "alt-ctrl-j": "vim::ResizePaneDown",
+      "alt-ctrl-h": "vim::ResizePaneLeft",
+      "alt-ctrl-l": "vim::ResizePaneRight",
+    },
+  },
+
+  // Editor
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": "vim::NormalBefore",
+    },
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "space w": "workspace::Save",
+      "space l f": "editor::Format",
+      "space e": "project_panel::ToggleFocus",
+      "space b d": "pane::CloseActiveItem",
+      "space q": "pane::CloseActiveItem",
+      "space b o": [
+        "pane::CloseOtherItems",
+        {
+          "close_pinned": false,
+        },
+      ],
+    },
+  },
+
+  // ProjectPanel
+  {
+    "context": "ProjectPanel",
+    "unbind": {
+      "cmd-n": "project_panel::NewFile",
+      "alt-cmd-n": "project_panel::NewDirectory",
+      "cmd-c": "project_panel::Copy",
+      "cmd-v": "project_panel::Paste",
+      "cmd-x": "project_panel::Cut",
+      "f2": "project_panel::Rename",
+      "cmd-delete": [
+        "project_panel::Delete",
+        {
+          "skip_prompt": false,
+        },
+      ],
+    },
+  },
+  {
+    "context": "ProjectPanel && !editing",
+    "bindings": {
+      "l": "project_panel::OpenPermanent",
+      "h": "project_panel::CollapseSelectedEntry",
+      "n": "project_panel::NewFile",
+      "a": "project_panel::NewFile",
+      "shift-n": "project_panel::NewDirectory",
+      "y": "project_panel::Copy",
+      "p": "project_panel::Paste",
+      "x": "project_panel::Cut",
+      "r": "project_panel::Rename",
+      "d": [
+        "project_panel::Delete",
+        {
+          "skip_prompt": false,
+        },
+      ],
+      "s": "project_panel::OpenSplitHorizontal",
+      "v": "project_panel::OpenSplitVertical",
+      "space e": "project_panel::ToggleFocus",
+    },
+  },
+
+  // Pane
+  {
+    "context": "Pane",
+    "bindings": {
+      "cmd-1": ["pane::ActivateItem", 0],
+      "cmd-2": ["pane::ActivateItem", 1],
+      "cmd-3": ["pane::ActivateItem", 2],
+      "cmd-4": ["pane::ActivateItem", 3],
+      "cmd-5": ["pane::ActivateItem", 4],
+      "cmd-6": ["pane::ActivateItem", 5],
+      "cmd-7": ["pane::ActivateItem", 6],
+      "cmd-8": ["pane::ActivateItem", 7],
+      "cmd-9": ["pane::ActivateItem", 8],
+    },
+    "unbind": {
+      "alt-cmd-t": [
+        "pane::CloseOtherItems",
+        {
+          "close_pinned": false,
+        },
+      ],
+      "ctrl-1": ["pane::ActivateItem", 0],
+      "ctrl-2": ["pane::ActivateItem", 1],
+      "ctrl-3": ["pane::ActivateItem", 2],
+      "ctrl-4": ["pane::ActivateItem", 3],
+      "ctrl-5": ["pane::ActivateItem", 4],
+      "ctrl-6": ["pane::ActivateItem", 5],
+      "ctrl-7": ["pane::ActivateItem", 6],
+      "ctrl-8": ["pane::ActivateItem", 7],
+      "ctrl-9": ["pane::ActivateItem", 8],
+    },
+  },
+
+  // Workspace
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift shift": "file_finder::Toggle",
+      "ctrl-cmd-1": ["workspace::ActivatePane", 0],
+      "ctrl-cmd-2": ["workspace::ActivatePane", 1],
+      "ctrl-cmd-3": ["workspace::ActivatePane", 2],
+      "ctrl-cmd-4": ["workspace::ActivatePane", 3],
+      "ctrl-cmd-5": ["workspace::ActivatePane", 4],
+      "ctrl-cmd-6": ["workspace::ActivatePane", 5],
+      "ctrl-cmd-7": ["workspace::ActivatePane", 6],
+      "ctrl-cmd-8": ["workspace::ActivatePane", 7],
+      "ctrl-cmd-9": ["workspace::ActivatePane", 8],
+    },
+    "unbind": {
+      "cmd-1": ["workspace::ActivatePane", 0],
+      "cmd-2": ["workspace::ActivatePane", 1],
+      "cmd-3": ["workspace::ActivatePane", 2],
+      "cmd-4": ["workspace::ActivatePane", 3],
+      "cmd-5": ["workspace::ActivatePane", 4],
+      "cmd-6": ["workspace::ActivatePane", 5],
+      "cmd-7": ["workspace::ActivatePane", 6],
+      "cmd-8": ["workspace::ActivatePane", 7],
+      "cmd-9": ["workspace::ActivatePane", 8],
+    },
+  },
+
+  // Dock
+  {
+    "context": "Dock",
+    "bindings": {
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w l": "workspace::ActivatePaneRight",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w j": "workspace::ActivatePaneDown",
+    },
+  },
+]

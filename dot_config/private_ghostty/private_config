@@ -1,0 +1,34 @@
+# 主题
+theme = light:Kanagawa Lotus,dark:Kanagawa Dragon
+
+# 字体
+font-family = Liga SFMono Nerd Font
+font-size = 15
+font-style = Medium
+
+# 透明度
+# background-opacity = 0.4
+# background-blur-radius = 10
+
+# 指针
+cursor-style = block
+
+# 窗口
+window-padding-balance = true
+
+# shaders
+custom-shader = cursor_sweep.glsl
+
+# mac
+macos-option-as-alt = true
+# macos-titlebar-style = native
+confirm-close-surface = false
+
+quick-terminal-position = bottom
+
+# 快捷键
+keybind = global:cmd+backslash=toggle_quick_terminal
+keybind = super+shift+u=scroll_page_up
+keybind = super+shift+d=scroll_page_down
+
+shell-integration-features = cursor,sudo,title,ssh-env,ssh-terminfo
