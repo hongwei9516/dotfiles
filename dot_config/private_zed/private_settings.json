@@ -16,8 +16,8 @@
   // theme
   "theme": {
     "mode": "system",
-    "light": "Catppuccin Latte",
-    "dark": "Catppuccin Mocha",
+    "light": "Kanagawa Lotus",
+    "dark": "Kanagawa Dragon",
   },
   // font
   "ui_font_family": "Liga SFMono Nerd Font",

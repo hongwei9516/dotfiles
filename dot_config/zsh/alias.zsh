@@ -3,7 +3,7 @@
 # ==========================================
 
 alias ls='eza --icons=auto --color=auto --group-directories-first'
-alias ll='eza -lagh --git --octal-permissions'
+alias ll='eza -lagh --icons=auto --git --octal-permissions'
 
 alias df='df -h'
 alias grep='grep --color=auto'

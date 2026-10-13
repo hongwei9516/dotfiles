@@ -9,6 +9,11 @@ setopt hist_find_no_dups
 setopt hist_expire_dups_first
 setopt hist_reduce_blanks
 
+# XDG defaults (for non-login shells that skip ~/.zprofile)
+: "${XDG_CONFIG_HOME:=$HOME/.config}"
+: "${XDG_DATA_HOME:=$HOME/.local/share}"
+: "${XDG_CACHE_HOME:=$HOME/.cache}"
+
 # `brew shellenv` in ~/.zprofile already exports HOMEBREW_PREFIX; reuse it
 # instead of forking `brew --prefix` on every interactive shell.
 BREW_PREFIX=${HOMEBREW_PREFIX:-$(brew --prefix)}
