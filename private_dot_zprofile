@@ -1,18 +1,2 @@
 # homebrew
 eval "$(/opt/homebrew/bin/brew shellenv zsh)"
-# install from local repo
-export HOMEBREW_NO_INSTALL_FROM_API=1
-# install and no ask
-export HOMEBREW_NO_ASK=1
-
-# xdg
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_CACHE_HOME=$HOME/.cache
-export XDG_DATA_HOME=$HOME/.local/share
-
-# zdotdir
-export ZDOTDIR=$HOME/.config/zsh
-
-# neovim
-export EDITOR=nvim
-export MANPAGER='nvim +Man!'
