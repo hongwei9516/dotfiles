@@ -22,3 +22,4 @@
 /dot_config/private_herdr/symlink_herdr.sock.agent
 /dot_config/private_karabiner/private_automatic_backups
 /dot_config/private_pi/private_agent/sessions/--Users-hong-.local-share-chezmoi--
+/dot_config/zsh/readonly_dot_zcompdump.zwc

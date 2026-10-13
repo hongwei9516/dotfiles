@@ -7,15 +7,19 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "cli_default_open_behavior": "existing_window",
+  // vscode keymap
   "base_keymap": "VSCode",
-  "autosave": "off",
+
+  // ----------------------- theme settings -----------------------
+  // material icon
   "icon_theme": "Material Icon Theme",
+  // theme
   "theme": {
     "mode": "system",
     "light": "Catppuccin Latte",
     "dark": "Catppuccin Mocha",
   },
+  // font
   "ui_font_family": "Liga SFMono Nerd Font",
   "ui_font_size": 15.0,
   "buffer_font_family": "Liga SFMono Nerd Font",
@@ -28,28 +32,35 @@
   "markdown_preview": {
     "code_font_family": "Liga SFMono Nerd Font",
     "font_family": "Liga SFMono Nerd Font",
+    "font_size": 15,
   },
-  // 滚动条
-  "scrollbar": {
-    "show": "system",
-  },
-  // 彩虹缩进
-  "indent_guides": {
-    "enabled": true,
-    "coloring": "indent_aware",
-  },
-  // 相对行号
-  "relative_line_numbers": "enabled",
+
+  // ----------------------- editor settings ----------------------
+  // cursor
   "cursor_blink": false,
   "cursor_animation": {
     "enabled": true,
   },
+  // scrollbar
+  "scrollbar": {
+    "show": "system",
+  },
+  // rainbow indent
+  "indent_guides": {
+    "enabled": true,
+    "coloring": "indent_aware",
+  },
+  // line numbers
+  "relative_line_numbers": "enabled",
+  // code diagnostics
   "diagnostics": {
     "inline": {
-      "enabled": true
-    }
+      "enabled": true,
+    },
   },
-  // vim 模式
+
+  // ------------------------ vim settings ------------------------
+  // vim
   "vim_mode": true,
   "vim": {
     "use_smartcase_find": true,
@@ -60,11 +71,32 @@
     "enabled": true,
     "delay_ms": 200,
   },
-  // 项目面板
+
+  // ----------------------- panel settings -----------------------
+  // title bar
+  "title_bar": {
+    "show_onboarding_banner": false,
+    "show_project_items": false,
+    "show_branch_name": false,
+    "show_user_menu": false,
+  },
+  // tab_bar
+  "tab_bar": {
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false,
+  },
+  // toolbar
+  "toolbar": {
+    "quick_actions": false,
+  },
+  "status_bar": {
+    "experimental.show": false,
+  },
+  // project panel
   "project_panel": {
     "dock": "left",
   },
-  // 协作面板
+  // collaboration panel
   "collaboration_panel": {
     "button": false,
   },
@@ -78,19 +110,22 @@
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
       "enable_thinking": false,
-      "effort": "low"
+      "effort": "low",
     },
     "default_profile": "ask",
     "dock": "right",
     "favorite_models": [],
-    "model_parameters": []
+    "model_parameters": [],
   },
-  // 网络代理
+
+  // ----------------------- other settings -----------------------
+  // proxy
   "proxy": "socks5://127.0.0.1:1080",
-  // 信任所有工作区
+  // trust all workspaces
   "session": {
     "trust_all_worktrees": true,
   },
+  // Zed
   "telemetry": {
     "diagnostics": false,
     "metrics": false,

@@ -21,6 +21,12 @@
 
   // Editor
   {
+    "context": "Editor",
+    "bindings": {
+      "space c a": "editor::ToggleCodeActions",
+    },
+  },
+  {
     "context": "Editor && vim_mode == insert",
     "bindings": {
       "j k": "vim::NormalBefore",
@@ -43,14 +49,14 @@
     },
   },
   {
-     "context": "Editor && showing_completions",
-     "bindings": {
-       "enter": "editor::ComposeCompletion"
-     },
-     "unbind": {
-       "tab": "editor::ComposeCompletion"
-     },
-   },
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "enter": "editor::ComposeCompletion",
+    },
+    "unbind": {
+      "tab": "editor::ComposeCompletion",
+    },
+  },
 
   // ProjectPanel
   {
@@ -165,5 +171,4 @@
       "ctrl-w j": "workspace::ActivatePaneDown",
     },
   },
-
 ]
