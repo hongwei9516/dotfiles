@@ -763,6 +763,49 @@
           ]
         }
       ]
+    },
+    {
+      "description": "Chrome: Press Option+I to Translate Page (Right Click + T)",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "i",
+            "modifiers": {
+              "mandatory": [
+                "left_option"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button2"
+            },
+            {
+              "hold_down_milliseconds": 300,
+              "key_code": "vk_none"
+            },
+            {
+              "key_code": "t"
+            },
+            {
+              "hold_down_milliseconds": 300,
+              "key_code": "vk_none"
+            },
+            {
+              "key_code": "return_or_enter"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^com\\.google\\.Chrome$"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }

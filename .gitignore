@@ -20,3 +20,5 @@
 /dot_config/private_herdr/herdr-server.log
 /dot_config/private_herdr/session.json
 /dot_config/private_herdr/symlink_herdr.sock.agent
+/dot_config/private_karabiner/private_automatic_backups
+/dot_config/private_pi/private_agent/sessions/--Users-hong-.local-share-chezmoi--

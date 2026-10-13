@@ -229,10 +229,6 @@ if = "test %{app-bundle-id} = com.apple.Safari"
 run = ["move-node-to-workspace B"]
 
 [[on-window-detected]]
-if = "test %{app-bundle-id} = com.apple.Terminal"
-run = ["move-node-to-workspace T"]
-
-[[on-window-detected]]
 if = "test %{app-bundle-id} = com.mitchellh.ghostty"
 run = ["layout floating", "move-node-to-workspace T"]
 

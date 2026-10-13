@@ -130,10 +130,13 @@ if [[ -n "$BREW_PREFIX" ]]; then
   typeset zsh_vi_mode="$BREW_PREFIX/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh"
   typeset zsh_autosuggest="$BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
   typeset zsh_syntax="$BREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+  typeset zsh_forgit="$BREW_PREFIX/share/forgit/forgit.plugin.zsh"
   
   [[ -f "$zsh_vi_mode" ]] && source "$zsh_vi_mode"
   [[ -f "$zsh_autosuggest" ]] && source "$zsh_autosuggest"
   [[ -f "$zsh_syntax" ]] && source "$zsh_syntax"
+  [[ -f "$zsh_forgit" ]] && source "$zsh_forgit"
+
 fi
 
 # ==========================================
@@ -171,6 +174,15 @@ y() {
     builtin cd -- "$cwd" || return
   fi
   command rm -f -- "$tmp"
+}
+
+z() {
+  local dir=$(
+    zoxide query --list --score |
+    fzf --height 40% --layout reverse --info inline \
+        --nth 2.. --tac --no-sort --query "$*" \
+        --bind 'enter:become:echo {2..}'
+  ) && cd "$dir"
 }
 
 # ==========================================

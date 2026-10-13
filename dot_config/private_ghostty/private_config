@@ -1,5 +1,6 @@
 # 主题
-theme = light:Kanagawa Lotus,dark:Kanagawa Dragon
+# theme = light:Kanagawa Lotus,dark:Kanagawa Dragon
+theme = light:Catppuccin Latte,dark:Catppuccin Mocha
 
 # 字体
 font-family = Liga SFMono Nerd Font
