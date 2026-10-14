@@ -1,8 +1,12 @@
+tap "homebrew/cask"
+tap "homebrew/core"
 tap "nikitabobko/tap"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Manage your dotfiles across multiple diverse machines, securely
+brew "chezmoi"
 # Disk Usage/Free Utility - a better 'df' alternative
 brew "duf"
 # Perl lib for reading and writing EXIF metadata
@@ -15,10 +19,12 @@ brew "fastfetch"
 brew "fd"
 # Play, record, convert, and stream many audio and video codecs
 brew "ffmpeg-full", link: true
-# Terminal JSON viewer
-brew "fx"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Interactive git commands in the terminal
+brew "forgit"
+# Terminal JSON viewer
+brew "fx"
 # GitHub command-line tool
 brew "gh"
 # Syntax-highlighting pager for git and diff output
@@ -47,6 +53,8 @@ brew "media-info"
 brew "mole"
 # NCurses Disk Usage
 brew "ncdu"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # AI agent toolkit
@@ -94,6 +102,8 @@ cask "font-sf-mono-nerd-font-ligaturized"
 cask "ghostty"
 # Web browser
 cask "google-chrome"
+# Homebrew's official GUI
+cask "homebrew-app"
 # Keyboard shortcuts for every button on your screen
 cask "homerow"
 # Free and open-source media player
