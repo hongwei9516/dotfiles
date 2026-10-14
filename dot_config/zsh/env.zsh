@@ -22,7 +22,8 @@ BREW_PREFIX=${HOMEBREW_PREFIX:-$(brew --prefix)}
 typeset -U path   # keep PATH entries unique
 path=(
   "$XDG_DATA_HOME/bin"(N-/)          # personal scripts
-  "$BREW_PREFIX/bin"(N-/)            # homebrew
+  "$BREW_PREFIX/bin"(N-/)            # homebrew bin
+  "$BREW_PREFIX/sbin"(N-/)           # homebrew sbin
   "$BREW_PREFIX/opt/rustup/bin"(N-/) # rustup toolchain
   "$XDG_DATA_HOME/cargo/bin"(N-/)    # cargo-installed binaries
   "$path[@]"
