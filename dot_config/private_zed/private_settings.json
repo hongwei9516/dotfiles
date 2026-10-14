@@ -79,6 +79,7 @@
     "show_project_items": false,
     "show_branch_name": false,
     "show_user_menu": false,
+    "show_menus": false,
   },
   // tab_bar
   "tab_bar": {
