@@ -46,3 +46,6 @@ export PI_CODING_AGENT_DIR="${XDG_CONFIG_HOME:-$HOME/.config}/pi/agent"
 
 # copilot
 export COPILOT_HOME="$XDG_CONFIG_HOME/copilot"
+
+# postgres history
+export PSQL_HISTORY="$XDG_CONFIG_HOME/pg/.psql_history"

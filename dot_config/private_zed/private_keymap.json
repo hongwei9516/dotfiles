@@ -23,7 +23,6 @@
   {
     "context": "Editor",
     "bindings": {
-      "space c a": "editor::ToggleCodeActions",
     },
   },
   {
@@ -46,6 +45,10 @@
           "close_pinned": false,
         },
       ],
+      "space c a": "editor::ToggleCodeActions",
+      "space g g": "git_panel::ToggleFocus",
+      "space x x": "diagnostics::Deploy",
+      "space p a": "agent::ToggleFocus",
     },
   },
   {
@@ -97,6 +100,9 @@
       "s": "project_panel::OpenSplitHorizontal",
       "v": "project_panel::OpenSplitVertical",
       "space e": "project_panel::ToggleFocus",
+      "space g g": "git_panel::ToggleFocus",
+      "space x x": "diagnostics::Deploy",
+      "space p a": "agent::ToggleFocus",
     },
   },
 
@@ -149,6 +155,7 @@
       "ctrl-cmd-9": ["workspace::ActivatePane", 8],
     },
     "unbind": {
+      "ctrl-shift-g": "git_panel::ToggleFocus",
       "cmd-1": ["workspace::ActivatePane", 0],
       "cmd-2": ["workspace::ActivatePane", 1],
       "cmd-3": ["workspace::ActivatePane", 2],
@@ -171,4 +178,16 @@
       "ctrl-w j": "workspace::ActivatePaneDown",
     },
   },
+  {
+    "context": "Editor && edit_prediction",
+    "bindings": {
+      "cmd-enter": "editor::AcceptEditPrediction"
+    }
+  },
+  {
+    "context": "Editor && edit_prediction",
+    "unbind": {
+      "alt-tab": "editor::AcceptEditPrediction"
+    }
+  }
 ]

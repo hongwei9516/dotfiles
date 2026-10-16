@@ -9,7 +9,7 @@ export FZF_COMPLETION_PATH_OPTS='--walker file,dir,follow,hidden'
 export FZF_COMPLETION_DIR_OPTS='--walker dir,follow'
 
 # defalut opt
-export FZF_DEFAULT_OPTS="--style=full:dashed --inline-info"
+export FZF_DEFAULT_OPTS="--style=full --inline-info"
 
 export FZF_CTRL_T_OPTS="
   --walker-skip .git,node_modules,target

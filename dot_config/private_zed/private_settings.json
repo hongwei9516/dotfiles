@@ -7,6 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  // ----------------------- basic settings -----------------------
   // vscode keymap
   "base_keymap": "VSCode",
   "cli_default_open_behavior": "existing_window",
@@ -22,18 +23,19 @@
   },
   // font
   "ui_font_family": "Liga SFMono Nerd Font",
-  "ui_font_size": 15.0,
+  "ui_font_size": 16.0,
   "buffer_font_family": "Liga SFMono Nerd Font",
-  "buffer_font_size": 15,
+  "buffer_font_size": 16,
   "terminal": {
+    "button": false,
     "dock": "bottom",
     "font_family": "Liga SFMono Nerd Font",
-    "font_size": 15,
+    "font_size": 16,
   },
   "markdown_preview": {
     "code_font_family": "Liga SFMono Nerd Font",
     "font_family": "Liga SFMono Nerd Font",
-    "font_size": 15,
+    "font_size": 16,
   },
 
   // ----------------------- editor settings ----------------------
@@ -64,8 +66,9 @@
   // vim
   "vim_mode": true,
   "vim": {
+    "toggle_relative_line_numbers": true,
     "use_smartcase_find": true,
-    "use_system_clipboard": "on_yank",
+    "use_system_clipboard": "always",
   },
   // which_key
   "which_key": {
@@ -76,6 +79,7 @@
   // ----------------------- panel settings -----------------------
   // title bar
   "title_bar": {
+    "show_worktree_name": true,
     "show_onboarding_banner": false,
     "show_project_items": false,
     "show_branch_name": false,
@@ -92,10 +96,13 @@
     "quick_actions": false,
   },
   "status_bar": {
-    "experimental.show": false,
+    // "experimental.show": false,
+    "cursor_position_button": true,
+    "active_language_button": true
   },
   // project panel
   "project_panel": {
+    "button": false,
     "dock": "left",
   },
   // collaboration panel
@@ -104,14 +111,25 @@
   },
   // git
   "git_panel": {
+    "button": false,
     "dock": "left",
+  },
+  "outline_panel": {
+    "button": false
+  },
+  "search": {
+    "button": false
+  },
+  "debugger": {
+    "button": false
   },
   // agent
   "agent": {
+    "button": false,
     "default_model": {
       "provider": "deepseek",
       "model": "deepseek-v4-pro",
-      "enable_thinking": false,
+      "enable_thinking": true,
       "effort": "low",
     },
     "default_profile": "ask",

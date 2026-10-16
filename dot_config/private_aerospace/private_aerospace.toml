@@ -185,7 +185,8 @@ run = ["move-node-to-workspace B"]
 
 [[on-window-detected]]
 if = "test %{app-bundle-id} = com.mitchellh.ghostty"
-run = ["layout floating", "move-node-to-workspace T"]
+run = ["move-node-to-workspace T"]
+# run = ["layout floating", "move-node-to-workspace T"]
 
 # iina
 [[on-window-detected]]
