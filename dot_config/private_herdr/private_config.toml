@@ -37,8 +37,8 @@ onboarding = false
 # panel_bg = "#1e1e2e"
 # text = "#cdd6f4"
 
-# name = "catppuccin"
-name = "kanagawa"
+name = "catppuccin"
+# name = "kanagawa"
 auto_switch = false
 
 [terminal]

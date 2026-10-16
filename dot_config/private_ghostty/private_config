@@ -1,6 +1,6 @@
 # 主题
 # theme = light:Kanagawa Lotus,dark:Kanagawa Dragon
-theme = light:Kanagawa Lotus,dark:Catppuccin Mocha
+theme = light:Catppuccin Latte,dark:Catppuccin Mocha
 
 # 字体
 font-family = Liga SFMono Nerd Font
@@ -22,8 +22,8 @@ custom-shader = cursor_sweep.glsl
 
 # mac
 macos-option-as-alt = true
-# macos-titlebar-style = hidden
-macos-titlebar-style = transparent
+macos-titlebar-style = hidden
+# macos-titlebar-style = transparent
 confirm-close-surface = false
 
 quick-terminal-position = bottom

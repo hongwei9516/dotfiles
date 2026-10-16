@@ -93,6 +93,8 @@ brew "zsh-syntax-highlighting"
 brew "zsh-vi-mode"
 # AeroSpace is an i3-like tiling window manager for macOS
 cask "nikitabobko/tap/aerospace", trusted: true
+# Application launcher and productivity software
+cask "alfred"
 # Translation application for text, pictures, and manual input
 cask "bob-app"
 # Utilities designed to make common development tasks easier
@@ -102,6 +104,8 @@ cask "font-sf-mono-nerd-font-ligaturized"
 cask "ghostty"
 # Web browser
 cask "google-chrome"
+# Desktop automation application
+cask "hammerspoon"
 # Homebrew's official GUI
 cask "homebrew-app"
 # Keyboard shortcuts for every button on your screen
@@ -122,7 +126,10 @@ cask "snapzy"
 cask "stats"
 # Quicklook extension for source files
 cask "syntax-highlight"
+# Collection of tools to build a dedicated basic communication network
+cask "v2rayu"
 # Free messaging and calling application
 cask "wechat"
 # Multiplayer code editor
 cask "zed"
+npm "neovim"
