@@ -1,9 +1,6 @@
-# 主题
-# theme = light:Kanagawa Lotus,dark:Kanagawa Dragon
-theme = light:Catppuccin Latte,dark:Catppuccin Mocha
-
 # 字体
-font-family = Liga SFMono Nerd Font
+# font-family = Liga SFMono Nerd Font
+font-family = FiraMono Nerd Font Mono Regular
 font-size = 16
 font-style = Medium
 
@@ -34,3 +31,6 @@ keybind = super+shift+u=scroll_page_up
 keybind = super+shift+d=scroll_page_down
 
 shell-integration-features = cursor,sudo,title,ssh-env,ssh-terminfo
+
+# splitting into multiple Files
+config-file = ?theme.conf

@@ -132,4 +132,3 @@ cask "v2rayu"
 cask "wechat"
 # Multiplayer code editor
 cask "zed"
-npm "neovim"

@@ -26,6 +26,7 @@ path=(
   "$BREW_PREFIX/sbin"(N-/)           # homebrew sbin
   "$BREW_PREFIX/opt/rustup/bin"(N-/) # rustup toolchain
   "$XDG_DATA_HOME/cargo/bin"(N-/)    # cargo-installed binaries
+  "$HOME/.local/bin"(N-/)            # pynvim
   "$path[@]"
 )
 export PATH
