@@ -1,0 +1,9 @@
+zsh_conf_dir="${ZDOTDIR:-$HOME/.config/zsh}/conf.d"
+
+for conf in "$zsh_conf_dir"/*.zsh(N); do
+    if [[ -f "$conf" ]]; then
+        source "$conf"
+    fi
+done
+
+unset conf zsh_conf_dir

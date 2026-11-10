@@ -1,0 +1,13 @@
+/dot_config/gh/private_hosts.yml
+/dot_config/herdr/session-snapshots
+/dot_config/herdr/session.json
+/dot_config/herdr/symlink_herdr.sock.agent
+/dot_config/herdr/herdr-client.log
+/dot_config/herdr/herdr-server.log
+/dot_config/nvim/dot_git
+/dot_config/private_karabiner/private_automatic_backups
+/dot_config/zsh/dot_zcompdump
+/dot_config/zsh/private_dot_zcompcache
+/dot_config/zsh/private_dot_zsh_history
+/dot_config/zsh/private_dot_zsh_sessions
+/dot_config/nvim

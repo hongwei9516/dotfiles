@@ -1,0 +1,9 @@
+# Options
+setopt INC_APPEND_HISTORY
+
+setopt HIST_IGNORE_DUPS
+
+setopt HIST_IGNORE_SPACE
+
+setopt HIST_REDUCE_BLANKS
+

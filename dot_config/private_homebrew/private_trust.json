@@ -1,0 +1,6 @@
+{
+  "trustedcasks": [
+    "nikitabobko/tap/aerospace",
+    "ygsgdbd/tap/typeswitch"
+  ]
+}
