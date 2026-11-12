@@ -13,3 +13,8 @@ fi
 if type starship &>/dev/null; then
     eval "$(starship init zsh)"
 fi
+
+# Leaf
+if type leaf &>/dev/null; then
+    source "$HOME/.local/share/leaf/completions/_leaf"
+fi

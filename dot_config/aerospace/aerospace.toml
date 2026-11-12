@@ -78,6 +78,17 @@ gaps.outer.bottom =     30
 gaps.outer.top =        0
 gaps.outer.right =      30
 
+on-window-detected = [
+    {
+        if = 'test %{app-bundle-id} = com.apple.Music',
+        run = ['layout floating'],
+    },
+    {
+        if = 'test %{app-bundle-id} = com.apple.iCal',
+        run = ['layout floating'],
+    },
+]
+
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
 # 'main' binding mode must be always presented
@@ -182,3 +193,4 @@ gaps.outer.right =      30
 
 [workspace-to-monitor-force-assignment]
     Q = 'secondary'                  # Non-main monitor in case when there are only two monitors
+

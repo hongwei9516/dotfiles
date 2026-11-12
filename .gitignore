@@ -4,10 +4,11 @@
 /dot_config/herdr/symlink_herdr.sock.agent
 /dot_config/herdr/herdr-client.log
 /dot_config/herdr/herdr-server.log
-/dot_config/nvim/dot_git
 /dot_config/private_karabiner/private_automatic_backups
 /dot_config/zsh/dot_zcompdump
 /dot_config/zsh/private_dot_zcompcache
 /dot_config/zsh/private_dot_zsh_history
 /dot_config/zsh/private_dot_zsh_sessions
-/dot_config/nvim
+/dot_config/herdr/sessions
+/dot_config/zed/prompts/prompts-library-db.0.mdb
+/dot_config/herdr/empty_dot_plugins.lock

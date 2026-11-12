@@ -3,6 +3,11 @@ theme = light:Catppuccin Latte,dark:Catppuccin Mocha
 font-size = 16
 font-family = "Maple Mono NF CN"
 
+# Mono字体图标偏小问题 感觉图标变得太大，不太习惯，暂时先不用
+# font-codepoint-map = U+E000-U+E00A,U+E0A0-U+E0A3,U+E0B0-U+E0C8,U+E0CA,U+E0CC-U+E0D7,U+E200-U+E2A9,U+E300-U+E3E3,U+E5FA-U+E6B7,U+E700-U+E8EF,U+EA60-U+EC1E,U+ED00-U+F2FF,U+EE00-U+EE0B,U+F300-U+F381,U+F400-U+F533,U+F0001-U+F1AF0=Symbols Nerd Font Mono
+# adjust-icon-height = -15%
+
+# 透明度设置
 # background-opacity = 0.4
 
 custom-shader = cursor_sweep.glsl
@@ -18,3 +23,5 @@ quit-after-last-window-closed-delay = 1h30m
 
 shell-integration = zsh
 shell-integration-features = true
+
+keybind = super+shift+up=text:\x01[? \r

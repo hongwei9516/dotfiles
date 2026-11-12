@@ -308,6 +308,7 @@ tab_bar_position = "bottom"
 # delivery = "off"
 # delay_seconds = 1
 
+delivery = "herdr"
 [ui.toast.herdr]
 # position = "bottom-right"
 
@@ -378,3 +379,25 @@ pane_history = false
 # Maximum scrollback buffer size in bytes retained per pane terminal.
 # Matches Ghostty's default scrollback-limit behavior.
 # scrollback_limit_bytes = 10000000
+
+
+# Copy a match. prefix+space is tmux-thumbs' default key.
+[[keys.command]]
+key = "prefix+space"
+type = "plugin_action"
+command = "sd2k.thumbs.pick"
+description = "pick text"
+
+# Copy several matches. Space during a normal pick does this too.
+[[keys.command]]
+key = "prefix+alt+space"
+type = "plugin_action"
+command = "sd2k.thumbs.pick-multi"
+description = "pick several"
+
+# Open a match instead of copying it: editor, browser or git show.
+[[keys.command]]
+key = "prefix+o"
+type = "plugin_action"
+command = "sd2k.thumbs.pick-open"
+description = "pick text (open)"

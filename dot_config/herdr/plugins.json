@@ -1,0 +1,82 @@
+[
+  {
+    "plugin_id": "sd2k.thumbs",
+    "name": "Thumbs",
+    "version": "0.1.0",
+    "min_herdr_version": "0.8.0",
+    "description": "Hint-pick anything on screen: copy it, paste it into the pane, or open it",
+    "manifest_path": "/Users/hong/.config/herdr/plugins/github-installations/sd2k.thumbs-2fbe63569497/63161-0/checkout/herdr-plugin.toml",
+    "plugin_root": "/Users/hong/.config/herdr/plugins/github-installations/sd2k.thumbs-2fbe63569497/63161-0/checkout",
+    "enabled": true,
+    "platforms": [
+      "linux",
+      "macos"
+    ],
+    "build": [
+      {
+        "command": [
+          "sh",
+          "scripts/build.sh"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "pick",
+        "title": "Pick text (copy)",
+        "contexts": [
+          "pane"
+        ],
+        "command": [
+          "bash",
+          "scripts/pick.sh",
+          "copy"
+        ]
+      },
+      {
+        "id": "pick-multi",
+        "title": "Pick text (copy several)",
+        "contexts": [
+          "pane"
+        ],
+        "command": [
+          "bash",
+          "scripts/pick.sh",
+          "copy",
+          "multi"
+        ]
+      },
+      {
+        "id": "pick-open",
+        "title": "Pick text (open)",
+        "contexts": [
+          "pane"
+        ],
+        "command": [
+          "bash",
+          "scripts/pick.sh",
+          "open"
+        ]
+      }
+    ],
+    "panes": [
+      {
+        "id": "hints",
+        "title": "Thumbs",
+        "placement": "overlay",
+        "command": [
+          "bash",
+          "scripts/overlay.sh"
+        ]
+      }
+    ],
+    "source": {
+      "kind": "github",
+      "owner": "sd2k",
+      "repo": "herdr-thumbs",
+      "resolved_commit": "a94c8accf84159cbc1d25240ad72c8c8ac2bd62a",
+      "managed_path": "/Users/hong/.config/herdr/plugins/github-installations/sd2k.thumbs-2fbe63569497/63161-0/checkout",
+      "installed_unix_ms": 1794493574738
+    }
+  }
+]
